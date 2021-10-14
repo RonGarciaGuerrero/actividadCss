@@ -1,0 +1,54 @@
+/* esta es una regla donde el selector tiene varios elementos por ejemplo aqui aplicaria para
+table, y si dejo un espacio de separacion esto significa que se aplica para las th dentro tr dentro de table
+y para las td dentro de tr dentro de table, asi evito tener que hacer varias reglas */
+table, table tr td, table tr th {
+    border: 1px solid #ffffff;
+    border-collapse: collapse;
+    padding: 20px;
+    text-align: center;
+}
+td {
+    transition: all 1s;
+}
+th {
+    background-color: #838383;
+    color: white;
+  }
+.daw {
+    background-color: #9aebe0;
+} 
+.diw {
+    background-color: #fcc7c7;
+}
+.hlc {
+    background-color: #b6e6bd;
+}
+.recreo {
+    background-color: rgb(233, 233, 233);
+}
+.dwes {
+    background-color: rgb(251, 253, 113);
+}
+.eie {
+    background-color: rgb(130, 209, 255);
+}
+.dwec {
+    background-color: #dfddb5;
+}
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+  }
+/* Para el fondo en lugar de una imagen, he generado y editado un patron generado en la pagina web http://www.patternify.com/   
+body*/
+/* body     {
+    background:url(
+ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIUlEQVQoU2NMqL7ty0AEYAQpXNCqupmQ2lGFeEOI6OABAHJZJg6g8xcJAAAAAElFTkSuQmCC
+    ) repeat;
+ } */
+/*Aqui he añadido dos efectos, el primero hace q al pasar el puntero sobre la asignatura cambie de color, el otro es una transición ocurre la primera vez que se abre la página*/     
+td:hover {
+    background-color: white;
+    transition: all 1s; 
+}
+
+/* COMENTARIO DE DANI el spam, tiene in id y las celdas tienen una clase */
