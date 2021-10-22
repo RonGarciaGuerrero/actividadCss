@@ -1,0 +1,3 @@
+to do
+en construccion:
+-falta resolver que el background image no sea fijo sino que se mueva centrado y alineado con el texto

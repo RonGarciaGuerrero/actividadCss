@@ -24,7 +24,8 @@ div.bloqueexplicacion dd {
     background-color: #ffd6d6;
 }
 body{
- background-color: rgb(211,211,211);   
+ background-color: rgb(211,211,211);
+ font-family: Arial, Helvetica, sans-serif;   
 }
 h1{
     background-color: rgb(0, 0, 128);
@@ -33,30 +34,57 @@ h1{
 .lateral{
     float: left;
     background-color: rgb(0, 0, 128);
-    width: 13em;
+    width: 16em;
+    font-size: smaller;
 }
 .logo img{
     margin-left: auto;
     margin-right: auto;
     display: block;
+    width: 6em;
 }
 .logo{
     background-color: white;
-    width: 13em;
+    width: 16em;
+
 }
 .central{
     background-color: rgb(224, 255, 255);
     border-color: red;
     border-style: double;
-    margin-left: 13.5em;
+    margin-left: 14em;
+    background-image: url("./imagenes/construccion.png"), url("./imagenes/construccion.png");
+    background-repeat: no-repeat,no-repeat;
+    background-position: 10em,30em;
+    /* background-attachment: inherit; */
+    /* falta resolver que el background image no sea fijo sino que se mueva centrado y alineado con el texto */
+
 }
 
 .tituloaviso{
     margin-right: auto;
     margin-left: auto;
     text-align:center;
-
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 4.5em;
 }
 .cuerpoaviso{
     text-align:center;
+}
+.pie{
+    bottom: 0.5em;
+    position: fixed;
+    width: 100%;
+    text-align: right;
+    background-color:rgb(0, 0, 128);
+    color: rgb(248, 248, 38);
+    font-size: smaller;
+}
+.cabecera{
+    text-align: center;
+    font-size: small;
+}
+.lateral{
+    color: rgb(248, 248, 38);
 }
