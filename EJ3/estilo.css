@@ -24,18 +24,19 @@ div.bloqueexplicacion dd {
     background-color: #ffd6d6;
 }
 body{
- background-color: rgb(211,211,211);
- font-family: Arial, Helvetica, sans-serif;   
+ background-color: rgb(211,211,211);   
 }
 h1{
     background-color: rgb(0, 0, 128);
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .lateral{
     float: left;
     background-color: rgb(0, 0, 128);
     width: 16em;
     font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .logo img{
     margin-left: auto;
@@ -48,19 +49,23 @@ h1{
     width: 16em;
 
 }
-.central{
+
+.aviso{
     background-color: rgb(224, 255, 255);
     border-color: red;
     border-style: double;
-    margin-left: 14em;
     background-image: url("./imagenes/construccion.png"), url("./imagenes/construccion.png");
     background-repeat: no-repeat,no-repeat;
-    background-position: 10em,30em;
-    /* background-attachment: inherit; */
+    background-position: 35em,65em;
     /* falta resolver que el background image no sea fijo sino que se mueva centrado y alineado con el texto */
 
 }
-
+.central{
+    margin-left: 14em;
+}
+.cuaderno{
+    background-color: rgb(255, 255, 224);
+}
 .tituloaviso{
     margin-right: auto;
     margin-left: auto;
@@ -75,7 +80,7 @@ h1{
 .pie{
     bottom: 0.5em;
     position: fixed;
-    width: 100%;
+    width: 99%;
     text-align: right;
     background-color:rgb(0, 0, 128);
     color: rgb(248, 248, 38);
@@ -87,4 +92,48 @@ h1{
 }
 .lateral{
     color: rgb(248, 248, 38);
+}
+h2{
+    background-color: rgb(173, 216, 230);
+    color: rgb(0, 0, 128);
+    border-style: double;
+    border-color: rgb(0, 0, 128);
+    height: 1.7em;
+    padding-top: 0.5em;
+    text-align: center;
+}
+h3{
+    color: rgb(0, 0, 128);
+    border-bottom: 1px solid rgb(0, 0, 128);
+    margin-left: 0.5em;
+    padding-left: 0.5em;
+}
+.areaLimpia{
+    float: right;
+    display: flex;
+    background-color: rgb(255, 255, 224);
+
+}
+.tablaContenido{
+    background-color: white;
+    border-style: dashed;
+    margin: 0.5em;
+    padding: 0.5em;
+    font-size: small;
+}
+#objetivos{
+    padding-top: 1em;
+}
+#objetivos, #problema, #conceptos{
+    display: flex;
+}
+.bloqueexplicacion{
+    background-color: rgb(224, 255, 255);
+}
+.cuaderno{
+    font-size: small;
+}
+.bloqueexplicacion{
+    margin: 1.5em;
+    padding: 0.8em;
 }
