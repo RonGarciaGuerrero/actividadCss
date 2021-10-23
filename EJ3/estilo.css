@@ -29,7 +29,11 @@ body{
 h1{
     background-color: rgb(0, 0, 128);
     color: white;
+    
+}
+h1,h2,h3,h4{
     font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 128);
 }
 .lateral{
     float: left;
@@ -56,7 +60,7 @@ h1{
     border-style: double;
     background-image: url("./imagenes/construccion.png"), url("./imagenes/construccion.png");
     background-repeat: no-repeat,no-repeat;
-    background-position: 35em,65em;
+    background-position: 35%,65%;
     /* falta resolver que el background image no sea fijo sino que se mueva centrado y alineado con el texto */
 
 }
@@ -65,6 +69,7 @@ h1{
 }
 .cuaderno{
     background-color: rgb(255, 255, 224);
+    padding-bottom: 1em;
 }
 .tituloaviso{
     margin-right: auto;
@@ -77,10 +82,10 @@ h1{
 .cuerpoaviso{
     text-align:center;
 }
-.pie{
+.pie {
     bottom: 0.5em;
-    position: fixed;
-    width: 99%;
+    position: relative;
+    width: 100%;
     text-align: right;
     background-color:rgb(0, 0, 128);
     color: rgb(248, 248, 38);
@@ -93,9 +98,12 @@ h1{
 .lateral{
     color: rgb(248, 248, 38);
 }
+.lateral a {
+    color: white;
+    text-decoration: none;
+}
 h2{
     background-color: rgb(173, 216, 230);
-    color: rgb(0, 0, 128);
     border-style: double;
     border-color: rgb(0, 0, 128);
     height: 1.7em;
@@ -103,8 +111,10 @@ h2{
     text-align: center;
 }
 h3{
-    color: rgb(0, 0, 128);
     border-bottom: 1px solid rgb(0, 0, 128);
+    margin-right: 1em; 
+}
+h3, h4{
     margin-left: 0.5em;
     padding-left: 0.5em;
 }
@@ -112,7 +122,7 @@ h3{
     float: right;
     display: flex;
     background-color: rgb(255, 255, 224);
-
+    /* para que salga los bordes separados de tabla contenido */
 }
 .tablaContenido{
     background-color: white;
@@ -127,13 +137,93 @@ h3{
 #objetivos, #problema, #conceptos{
     display: flex;
 }
-.bloqueexplicacion{
+
+.bloqueexplicacion a:link  {
+    color: red;
+}/* color rojo para los links no visitados de esta clase */
+
+.bloqueexplicacion {
     background-color: rgb(224, 255, 255);
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: 1.5em;
 }
 .cuaderno{
     font-size: small;
 }
-.bloqueexplicacion{
-    margin: 1.5em;
-    padding: 0.8em;
+.figura {
+    border: solid 0.01em rgb(0, 0, 128);
+    text-align: center;
+    background-color: white;
+    padding: 0.5em;
+    margin-left: 1.3em;
+    margin-right: 1.3em;
+    margin-bottom: 0.5em;
+
+}
+img {
+    max-width: 100%;
+    /* para que las imagenes grandes se ajusten al 100% del contenedor pero que afecte a las mas chicas */
+}
+.codigo {
+    border-style: double;
+    border-color: rgb(0, 0, 128);
+    background-color: rgb(30, 144, 255);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 1em;
+} 
+.bloqueexplicacion dl dt {
+    font-weight: bold;
+}
+.bloqueexplicacion .identificadorExp {
+    border: 0.3em solid rgb(0, 0, 128);
+    background-color: rgb(144, 238, 144);
+    color: rgb(0, 0, 128);
+    padding: 0.2em;
+    font-weight: bolder;
+    font-size: large;
+}
+.bloqueexplicacion .identificadorEje {
+    border: 0.3em solid rgb(0, 0, 128);
+    background-color: rgb(255, 165, 0);
+    color: rgb(0, 0, 128);
+    padding: 0.2em;
+    font-weight: bolder;
+    font-size: large;
+}
+.bloqueexplicacion .identificadorPro {
+    border: 0.3em solid rgb(0, 0, 128);
+    background-color: rgb(255, 165, 0);
+    color: rgb(0, 0, 128);
+    padding: 0.2em;
+    font-weight: bolder;
+    font-size: large;
+    display: inline-flex;
+}
+
+div.bloqueexplicacion > ol {
+    border: dashed 0.1em blue;
+    background-color:white;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+}
+.ecuacion img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.salidapantalla pre {
+    border-style: double;
+    border-color: yellow;
+    color: green;
+    background-color: black;
+    padding: 1em;
+    margin-right: 1em;
+}
+.central {
+    min-height: 32em;
+/* para que solo afecte la altura minima de la clase pie  */
 }
