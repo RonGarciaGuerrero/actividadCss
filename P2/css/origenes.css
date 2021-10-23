@@ -1,0 +1,130 @@
+header{
+    margin-top: 10px;
+    background-color: #ffffff99;
+    border-radius: 10px;
+    width: 100%;
+    height: 240px;
+}
+header img {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+hr{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+body{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(#baffc9,#ffffba,#ffdfba,#ffb3ba);
+}
+article {
+    margin-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 10px;
+    width: 100%;
+    height: 300px;
+}
+.banner{
+    margin-top:50px;
+}
+.banner img {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+.info{
+    text-align: left;
+    width: 15em;
+}
+.menu {
+    float: left;
+    margin-top: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 10px;
+}
+.menu a {
+    text-decoration: none
+}
+.lateralusuario{
+    text-align: left;
+}
+.lateralusuario span {
+    color: red;
+}
+.encabezado{
+    background-color: black;
+    color: white;
+}
+
+.titulotemas{
+    border-collapse: collapse;
+    border:1px solid black;
+    border-radius: 1em;
+    overflow: hidden;
+
+}
+
+th{
+    background: rgb(49, 49, 49);
+    height: 40px;
+    font-size: large;
+}
+td {
+    background: rgb(121, 121, 121);
+    border-bottom: 2px solid white;
+    padding-left: 10px;
+    font-size: small;
+    vertical-align: top;
+     
+  }
+
+.derechos{
+    margin-top: 60px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    
+}
+
+details{
+    font-size: small;
+}
+.separador{
+    width: 100%;
+    height: 3px;
+    background-color: rgb(186, 255, 201);
+}
+.onlineoffline{
+    margin-top: 10px;
+    
+}
+.anio{
+    float: right;
+}
+.temascolumna {
+    width: 20%;
+    
+}
+
+.Mensaje{
+    width: 80%;
+}
+.vistascolumna{
+    width: 5%;
+}
+.ultmenscolumna{
+    width: 20%;
+}
+.icono{
+    width: 5%;
+}

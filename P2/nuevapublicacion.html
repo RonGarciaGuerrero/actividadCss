@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=2909, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/nuevapublicacion.css">
+</head>
+<body>
+    <header>
+        <img src="./img/hyperpop3d.png" alt="3dlogo" width="400" height="187">
+        <hr>
+        <div class="cabecera">
+            <div class="menu"><a href="index.html">Inicio</a> </div>
+            <div class="menu"><a href="nuevapublicacion.html">Nuevo Tema</a></div>
+            <div class="menu"><a href="#">Contácto</a></div>
+            <div class="menu"> <a href="#">Salir</a></div>
+            <div style="clear: both;"></div>
+        </div>    
+    </header>
+
+    <!-- <nav>nav</nav> para este ejercicio no hace falta-->
+    
+    <div class="banner"><a href="https://open.spotify.com/playlist/37i9dQZF1DX7HOk71GPfSw"><img src="img/spotifyplaylist.png" alt="SpotifyPlaylist" width="1000" height="210"></a></div>
+    
+    <article>
+        
+        <div class="temas">
+            <form action="index.html">
+                <fieldset>
+                    <legend><h2>NUEVA PUBLICACIÓN:</h2></legend>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="fname">Nombre:</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="fname" name="fname" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="email">Email:</label>
+                                </td>
+                                <td>
+                                    <input type="email" id="email" name="email" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="message">Mensaje:</label>
+                                </td>
+                                <td>
+                                    <textarea name="message" rows="10" cols="30" required>Prueba de formulario.</textarea>
+                                
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <a href="#">Informacion adicional</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="info">Color para el texto:</label>
+                                </td>
+                                <td>
+                                    <input type="color" id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" value="#ff0000" style="width:30px;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="birthday">Fecha de nacimiento:</label>
+                                </td>
+                                <td>
+                                    <input type="date" id="birthday" name="birthday" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="quantity">¿Cuanto te gusta el foro? (entre 0 and 10):</label>
+                                </td>
+                                <td>
+                                        <input type="number" id="quantity" name="quantity" min="0" max="10" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="url">URL de tu pagina web personal:</label>
+                                </td>
+                                <td>
+                                        <input type="url" id="url" name="url" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="submit" value="Submit"> <input type="reset">
+                                </td>
+                            </tr>
+                        </table>
+                </fieldset>
+            </form>
+            
+            
+            <div class="derechos">Todos los derechos reservados. Ronald García Guerrero<div class="anio">2021-2022</div></div>
+        </div>
+    </article>
+</body>
+</html>
